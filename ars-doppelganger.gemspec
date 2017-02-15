@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
     end
   end
 
+  spec.add_development_dependency 'rspec'
 end
