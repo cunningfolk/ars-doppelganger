@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
     if Ars::Doppelganger::VERSION =~ /[a-zA-Z]+/
       spec.add_runtime_dependency "ars-#{lib_name}", "= #{Ars::Doppelganger::VERSION}"
     else
-      spec.add_runtime_dependency "ars-#{lib_name}", "~> #{Ars::Doppelganger::VERSION.sub(/^((?:\d+\.){2}).*$/, '\1.0')}"
+      spec.add_runtime_dependency "ars-#{lib_name}", "~> #{Ars::Doppelganger::VERSION.sub(/^((?:\d+\.){2}).*$/, '\10')}"
     end
   end
 
