@@ -1,0 +1,13 @@
+%w[ars-familiar].each do |lib|
+  lib_path = File.expand_path("../../#{lib}", __FILE__)
+  lib_path = false unless File.exists? lib_path
+  if lib_path
+    gem lib, :path => lib_path
+  end
+end
+
+gem 'rspec'
+gem 'yard', require: false
+gem 'gem-release'
+
+eval_gemfile 'Gemfile'
